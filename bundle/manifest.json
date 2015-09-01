@@ -1,0 +1,18 @@
+{
+    "Bundle-SymbolicName": "themes-plus",
+    "Bundle-Version": "1.0.0",
+    "Bundle-Layer": "",
+    "Bundle-Main": "",
+    "Bundle-Localization": [],
+    "CSS-Themes": [{
+            "name": "plus-lime"
+        },{
+            "name": "plus-ice"
+        },{
+            "name": "plus-orange"
+        },{
+            "name": "plus-purple"
+        },{
+            "name": "plus-light"
+        }]
+}
