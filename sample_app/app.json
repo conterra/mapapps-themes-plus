@@ -1,0 +1,2453 @@
+{
+    "load": {
+        "allowedBundles": [
+            "console",
+            "custominfo",
+            "themes-plus",
+            "dataform",
+            "filesaver",
+            "languagetoggler",
+            "mobileview",
+            "geometryservice",
+            "notifier",
+            "parametermanager",
+            "splashscreen",
+            "reportstore",
+            "coordinatefinder",
+            "reporttool",
+            "toolrules",
+            "toolset",
+            "windowmanager",
+            "basemapgallery",
+            "basemaptoggler",
+            "contentviewer",
+            "coordinatetransformer",
+            "followme",
+            "compositesearch",
+            "infoviewer",
+            "map",
+            "mapdesk",
+            "webmap",
+            "agsprinting",
+            "bookmarks",
+            "coordinateviewer",
+            "legend",
+            "locateme",
+            "magnifier",
+            "qrcode",
+            "maptip",
+            "measurement",
+            "navigationtoolset",
+            "overviewmap",
+            "redlining",
+            "scalebar",
+            "undoredo",
+            "agssearch",
+            "geonames",
+            "locator",
+            "omnisearch",
+            "locationfinder",
+            "featureinfo",
+            "infoservice",
+            "resultcenter",
+            "selection",
+            "mapflow",
+            "mobiletoc",
+            "system",
+            "templatelayout",
+            "templates",
+            "themes"
+        ],
+        "require": [
+            "${app}.app"
+        ],
+        "i18n": [
+            "bundle"
+        ]
+    },
+    "properties": {
+        "optimized": true,
+        "id": "themes_plus_sample",
+        "title": "Themes PLUS Sample",
+        "description": "",
+        "editorState": "PUBLISHED",
+        "createdBy": "cel",
+        "createdAt": 1392451370401,
+        "modifiedBy": "juku",
+        "modifiedAt": 1422963508824,
+        "templateFile": "themes_plus.zip",
+        "templateId": "14430D1736022B0",
+        "thumbnailFile": ""
+    },
+    "bundles": {
+        "agsprinting": {
+            "AGSPrintTool": {
+                "togglable": false
+            },
+            "enabled": true
+        },
+        "agssearch": {
+            "AGSStore": [
+                {
+                    "title": "${agssearch.countries.title}",
+                    "description": "${agssearch.countries.description}",
+                    "omniSearchLabelAttr": "NAME",
+                    "omniSearchSearchAttr": "NAME",
+                    "url": "http://services.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/6",
+                    "useIn": [
+                        "omnisearch",
+                        "selection"
+                    ],
+                    "filterOptions": {
+                        "suggestContains": true,
+                        "metadata": {
+                            "fields": [
+                                {
+                                    "name": "OBJECTID",
+                                    "title": "ID"
+                                },
+                                {
+                                    "name": "NAME",
+                                    "title": "NAME"
+                                }
+                            ]
+                        }
+                    },
+                    "omniSearchTypingDelay": 500,
+                    "omniSearchPageSize": 20,
+                    "omniSearchDefaultLabel": "${agssearch.countries.placeHolder}",
+                    "id": "_AGS_STORE_1351604543797"
+                },
+                {
+                    "title": "BathingWater (Bathing water quality)",
+                    "description": "",
+                    "omniSearchLabelAttr": "cntr_id",
+                    "omniSearchSearchAttr": "cntr_id",
+                    "idProperty": "OBJECTID_12",
+                    "url": "http://water.discomap.eea.europa.eu/arcgis/rest/services/BathingWater/BathingWater_Dyna_WM/MapServer/2",
+                    "useIn": [
+                        "selection"
+                    ],
+                    "filterOptions": {
+                        "suggestContains": false
+                    },
+                    "omniSearchTypingDelay": 500,
+                    "omniSearchPageSize": 20,
+                    "omniSearchDefaultLabel": "Enter search string...",
+                    "fetchIdProperty": true,
+                    "id": "bathingwater_1"
+                },
+                {
+                    "title": "Regions (EU27 Bio Geographical Regions 2011)",
+                    "description": "",
+                    "omniSearchLabelAttr": "name",
+                    "omniSearchSearchAttr": "name",
+                    "idProperty": "OBJECTID",
+                    "url": "http://bio.discomap.eea.europa.eu/arcgis/rest/services/BioRegions/Biogeographicalregions_Dyna_WM/MapServer/0",
+                    "useIn": [
+                        "selection"
+                    ],
+                    "filterOptions": {
+                        "suggestContains": false
+                    },
+                    "omniSearchTypingDelay": 500,
+                    "omniSearchPageSize": 20,
+                    "omniSearchDefaultLabel": "Enter search string...",
+                    "fetchIdProperty": true,
+                    "id": "regions_0"
+                },
+                {
+                    "title": "Natura2000 (Scale under 1:10,000,000)",
+                    "description": "This map corresponds to Natura 2000 spatial data delivered by MS",
+                    "omniSearchLabelAttr": "SITECODE",
+                    "omniSearchSearchAttr": "SITECODE",
+                    "idProperty": "OBJECTID_1",
+                    "url": "http://discomap.eea.europa.eu/arcgis/rest/services/Bio/Natura2000_Dyna_WM/MapServer/4",
+                    "useIn": [
+                        "selection"
+                    ],
+                    "filterOptions": {
+                        "suggestContains": false
+                    },
+                    "omniSearchTypingDelay": 500,
+                    "omniSearchPageSize": 20,
+                    "omniSearchDefaultLabel": "Enter search string...",
+                    "fetchIdProperty": true,
+                    "id": "natura2000_2"
+                },
+                {
+                    "title": "Natura2000 (Scale under 1:10,000,000)",
+                    "description": "This map corresponds to Natura 2000 spatial data delivered by MS",
+                    "omniSearchLabelAttr": "SITECODE",
+                    "omniSearchSearchAttr": "SITECODE",
+                    "idProperty": "OBJECTID_1",
+                    "url": "http://discomap.eea.europa.eu/arcgis/rest/services/Bio/Natura2000_Dyna_WM/MapServer/8",
+                    "useIn": [
+                        "selection"
+                    ],
+                    "filterOptions": {
+                        "suggestContains": false
+                    },
+                    "omniSearchTypingDelay": 500,
+                    "omniSearchPageSize": 20,
+                    "omniSearchDefaultLabel": "Enter search string...",
+                    "fetchIdProperty": true,
+                    "id": "natura2000_6"
+                }
+            ],
+            "enabled": true
+        },
+        "basemapgallery": {
+            "Gallery": {
+                "showArcGisComMaps": true,
+                "showOwnMaps": false,
+                "defaultThumbnailServiceUrlPostfix": "/tile/11/676/11111",
+                "ignoredServices": []
+            },
+            "enabled": true
+        },
+        "basemaptoggler": {
+            "DropDownBasemapToggler": {
+                "showLabel": true
+            },
+            "enabled": true
+        },
+        "bookmarks": {
+            "BookmarksFactory": {
+                "storageName": "Mapapps_mapmarks_full",
+                "bookmarksOpts": {
+                    "editable": true
+                },
+                "predefinedBookmarks": [
+                    {
+                        "extent": {
+                            "spatialReference": {
+                                "wkid": 3857
+                            },
+                            "xmax": 10576968.521053234,
+                            "xmin": -8208195.550306687,
+                            "ymax": 12931705.115558533,
+                            "ymin": 2648784.574413076
+                        },
+                        "name": "${bookmarks.predefined.europe}"
+                    },
+                    {
+                        "extent": {
+                            "spatialReference": {
+                                "wkid": 3857
+                            },
+                            "xmax": 2357847.7436069767,
+                            "xmin": 9702.234686995856,
+                            "ymax": 7299468.689048652,
+                            "ymin": 6014103.621405475
+                        },
+                        "name": "${bookmarks.predefined.germany}"
+                    },
+                    {
+                        "extent": {
+                            "spatialReference": {
+                                "wkid": 3857
+                            },
+                            "xmax": 1564928.2306908383,
+                            "xmin": 1418169.1363834972,
+                            "ymax": 6932972.247678364,
+                            "ymin": 6852636.9309507515
+                        },
+                        "name": "Berlin"
+                    }
+                ]
+            },
+            "BookmarksTool": {
+                "togglable": false
+            },
+            "enabled": true
+        },
+        "compositesearch": {
+            "CompositeStore": [
+                {
+                    "id": "composite_natura2000_2_6",
+                    "substoreIds": [
+                        "natura2000_2",
+                        "natura2000_6"
+                    ],
+                    "useIn": [
+                        "selection"
+                    ]
+                }
+            ],
+            "enabled": true
+        },
+        "console": {
+            "enabled": true
+        },
+        "contentviewer": {
+            "ContentRegistration": {
+                "contentRules": [
+                    {
+                        "info": {
+                            "valueNotFoundString": "-",
+                            "type": "CustomTemplate",
+                            "title": "{short_name}",
+                            "showDetailsButton": true,
+                            "skipProperties": [],
+                            "template": "<br /><h1>{name}</h1><div><hr /><a href=\"http://www.google.de/search?q={name}\" target=\"_blank\">${contentviewer.regions.search}</a></div>"
+                        },
+                        "windowSize": {
+                            "w": 280,
+                            "h": 280
+                        },
+                        "matches": {
+                            "context": {
+                                "mapModelNodeId": "regions/0"
+                            }
+                        },
+                        "title": "EU27 Biogeographical Regions 2011",
+                        "detail": {
+                            "title": "{name}",
+                            "type": "Grid",
+                            "valueNotFoundString": "-",
+                            "allowedProperties": [
+                                "OBJECTID",
+                                "Shape",
+                                "PK_UID",
+                                "short_name",
+                                "pre_2012",
+                                "code",
+                                "name",
+                                "Shape_Length",
+                                "Shape_Area",
+                                "Region"
+                            ]
+                        },
+                        "type": "Grid"
+                    }
+                ]
+            },
+            "StaticContent": {
+                "items": [
+                    {
+                        "title": "${contentviewer.welcome.title}",
+                        "dndContainerName": "map",
+                        "window": {
+                            "marginBox": {
+                                "w": 280,
+                                "h": 290,
+                                "b": 100,
+                                "l": 20
+                            }
+                        },
+                        "message": "<p>${contentviewer.welcome.content}</p><p>${contentviewer.mdn.description} <a href='http://developernetwork.conterra.de/' target='_blank'>${contentviewer.mdn.start}</a>. ${contentviewer.mdn.more}</p>"
+                    }
+                ]
+            },
+            "enabled": true
+        },
+        "coordinatefinder": {
+            "CoordinateFinderController": {
+                "_symbolTable": {
+                    "point": {
+                        "url": "resource('images/mapCrosshair_winter.gif')",
+                        "width": 37.5,
+                        "height": 37.5,
+                        "xoffset": 0,
+                        "yoffset": 0,
+                        "type": "esriPMS"
+                    }
+                }
+            },
+            "enabled": true
+        },
+        "coordinatetransformer": {
+            "enabled": true
+        },
+        "coordinateviewer": {
+            "CoordinateViewer": {
+                "degreeFormat": true,
+                "transformSrs": true,
+                "targetSrs": "EPSG:4326"
+            },
+            "enabled": true
+        },
+        "custominfo": {
+            "CustomInfoToggleTool": [
+                {
+                    "widgetSettings": {
+                        "content": "${custominfo.imprint.content}",
+                        "window": {
+                            "marginBox": {
+                                "w": 300,
+                                "h": 400
+                            },
+                            "draggable": true,
+                            "closable": true,
+                            "modal": false,
+                            "maximizable": false,
+                            "resizable": true,
+                            "title": "${custominfo.imprint.title}"
+                        }
+                    },
+                    "type": "IMPRINT",
+                    "toolClass": "ctInfo",
+                    "title": "${custominfo.imprint.title}",
+                    "tooltip": "${custominfo.imprint.tooltip}",
+                    "togglable": true,
+                    "id": "IMPRINT_Imprint_1385994559598_CustomInfoTool"
+                }
+            ],
+            "enabled": true
+        },
+        "dataform": {
+            "enabled": true
+        },
+        "featureinfo": {
+            "ContentWidgetFactory": {
+                "contentRules": [
+                    {
+                        "matches": {
+                            "content": {
+                                "queryResults": {
+                                    "$exists": true
+                                }
+                            },
+                            "context": {}
+                        },
+                        "type": "featureInfoWidget",
+                        "windowTitle": "${ui.featureInfo.contentInfoWindowTitle}",
+                        "windowSize": {
+                            "w": 280,
+                            "h": 350
+                        },
+                        "hideEmptyLayerResults": true,
+                        "layerFeatureCount": 15
+                    }
+                ]
+            },
+            "enabled": true
+        },
+        "filesaver": {
+            "enabled": true
+        },
+        "followme": {
+            "enabled": true
+        },
+        "geometryservice": {
+            "enabled": true
+        },
+        "geonames": {
+            "POISearchStore": {
+                "componentEnabled": false
+            },
+            "PostalCodeSearchStore": {
+                "componentEnabled": true
+            },
+            "enabled": true
+        },
+        "infoservice": {
+            "enabled": true
+        },
+        "infoviewer": {
+            "enabled": true
+        },
+        "languagetoggler": {
+            "LanguageToggler": {
+                "languageNames": {
+                    "en": "English",
+                    "de": "Deutsch"
+                },
+                "languageTemplate": "${name}"
+            },
+            "enabled": true
+        },
+        "legend": {
+            "enabled": true
+        },
+        "locateme": {
+            "LocateMe": {
+                "showPositionLogs": true
+            },
+            "enabled": true
+        },
+        "locationfinder": {
+            "LocationFinderStore": {
+                "id": "locationfinder001",
+                "title": "${locationfinder.title}",
+                "description": "${locationfinder.description}",
+                "omniSearchAutoSubmit": true,
+                "omniSearchDefaultLabel": "${locationfinder.placeholder}",
+                "omniSearchSearchAttr": "name",
+                "omniSearchTypingDelay": 400,
+                "url": "http://176.28.54.181:8084/5a46lbvujl8j339r/finder/Lookup",
+                "wkid": 4326,
+                "showType": false,
+                "componentEnabled": true,
+                "priority": 1,
+                "omniSearchAutoActivate": true
+            },
+            "enabled": true
+        },
+        "locator": {
+            "enabled": true
+        },
+        "magnifier": {
+            "enabled": true
+        },
+        "map": {
+            "MapModelFactory": {
+                "_configData": {
+                    "maps": [
+                        {
+                            "id": "default",
+                            "glass_pane": [
+                                {
+                                    "id": "settlements",
+                                    "enabled": true,
+                                    "maptip": {
+                                        "content": "<p><b>{name2}<br />{name3}</b></p><p>{street}<br />{plz_city}</p>",
+                                        "dimensions": {
+                                            "width": 180,
+                                            "height": 110
+                                        }
+                                    },
+                                    "infoTemplate": {
+                                        "title": "${name}",
+                                        "content": "<p><b>${name2}<br />${name3}</b></p><p>${street}<br />${plz_city}</p><p>${map.glasspane.settlements.tel} ${tel}<br /><a href='mailto:${email}'>${email}</a></p><p><a href='${link}' target='_blank'>${map.glasspane.settlements.link}</a></p>",
+                                        "dimensions": {
+                                            "width": 250,
+                                            "height": 250
+                                        }
+                                    },
+                                    "graphics": [
+                                        {
+                                            "geometry": {
+                                                "x": 851872,
+                                                "y": 6788445,
+                                                "spatialReference": {
+                                                    "wkid": 3857
+                                                }
+                                            },
+                                            "attributes": {
+                                                "name": "Esri Deutschland",
+                                                "name2": "Esri Deutschland GmbH",
+                                                "name3": "Niederlassung Muenster",
+                                                "street": "Martin-Luther-King-Weg 20",
+                                                "plz_city": "DE-48155 Muenster",
+                                                "tel": "+49 89 207 005 1460",
+                                                "email": "info@muenster.esri.de",
+                                                "link": "http://www.esri.de/"
+                                            },
+                                            "symbol": {
+                                                "color": [
+                                                    221,
+                                                    0,
+                                                    85,
+                                                    230
+                                                ],
+                                                "size": 8,
+                                                "angle": 0,
+                                                "xoffset": 0,
+                                                "yoffset": 0,
+                                                "type": "esriSMS",
+                                                "style": "esriSMSCircle",
+                                                "outline": {
+                                                    "color": [
+                                                        255,
+                                                        255,
+                                                        255,
+                                                        255
+                                                    ],
+                                                    "width": 0,
+                                                    "type": "esriSLS",
+                                                    "style": "esriSLSSolid"
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "geometry": {
+                                                "x": 1292250,
+                                                "y": 6174702,
+                                                "spatialReference": {
+                                                    "wkid": 3857
+                                                }
+                                            },
+                                            "attributes": {
+                                                "name": "Geocom",
+                                                "name2": "Geocom Informatik GmbH",
+                                                "name3": "",
+                                                "street": "Ringstrasse 7",
+                                                "plz_city": "DE-85402 Kranzberg",
+                                                "tel": "+49 8166 677 0",
+                                                "email": "info@geocom-informatik.de",
+                                                "link": "http://www.geocom-informatik.de/"
+                                            },
+                                            "symbol": {
+                                                "color": [
+                                                    221,
+                                                    0,
+                                                    85,
+                                                    230
+                                                ],
+                                                "size": 8,
+                                                "angle": 0,
+                                                "xoffset": 0,
+                                                "yoffset": 0,
+                                                "type": "esriSMS",
+                                                "style": "esriSMSCircle",
+                                                "outline": {
+                                                    "color": [
+                                                        255,
+                                                        255,
+                                                        255,
+                                                        255
+                                                    ],
+                                                    "width": 0,
+                                                    "type": "esriSLS",
+                                                    "style": "esriSLSSolid"
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "geometry": {
+                                                "x": 1292350,
+                                                "y": 6174702,
+                                                "spatialReference": {
+                                                    "wkid": 3857
+                                                }
+                                            },
+                                            "attributes": {
+                                                "name": "Esri Deutschland",
+                                                "name2": "Esri Deutschland GmbH",
+                                                "name3": "",
+                                                "street": "Ringstraße 7",
+                                                "plz_city": "DE-85402 Kranzberg",
+                                                "tel": "+49 89 207 005 1200",
+                                                "email": "info@esri.de",
+                                                "link": "http://www.esri.de/"
+                                            },
+                                            "symbol": {
+                                                "color": [
+                                                    221,
+                                                    0,
+                                                    85,
+                                                    230
+                                                ],
+                                                "size": 12,
+                                                "angle": 0,
+                                                "xoffset": 0,
+                                                "yoffset": 0,
+                                                "type": "esriSMS",
+                                                "style": "esriSMSSquare",
+                                                "outline": {
+                                                    "color": [
+                                                        255,
+                                                        255,
+                                                        255,
+                                                        255
+                                                    ],
+                                                    "width": 0,
+                                                    "type": "esriSLS",
+                                                    "style": "esriSLSSolid"
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "geometry": {
+                                                "x": 1375507,
+                                                "y": 6685067,
+                                                "spatialReference": {
+                                                    "wkid": 3857
+                                                }
+                                            },
+                                            "attributes": {
+                                                "name": "Esri Deutschland",
+                                                "name2": "Esri Deutschland GmbH",
+                                                "name3": "Niederlassung Leipzig",
+                                                "street": "Fechnerstraße 8",
+                                                "plz_city": "DE-04155 Leipzig",
+                                                "tel": "+49 89 207 005 1420",
+                                                "email": "info@leipzig.esri.de",
+                                                "link": "http://www.esri.de/"
+                                            },
+                                            "symbol": {
+                                                "color": [
+                                                    221,
+                                                    0,
+                                                    85,
+                                                    230
+                                                ],
+                                                "size": 8,
+                                                "angle": 0,
+                                                "xoffset": 0,
+                                                "yoffset": 0,
+                                                "type": "esriSMS",
+                                                "style": "esriSMSCircle",
+                                                "outline": {
+                                                    "color": [
+                                                        255,
+                                                        255,
+                                                        255,
+                                                        255
+                                                    ],
+                                                    "width": 0,
+                                                    "type": "esriSLS",
+                                                    "style": "esriSLSSolid"
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "geometry": {
+                                                "x": 1084807,
+                                                "y": 6867807,
+                                                "spatialReference": {
+                                                    "wkid": 3857
+                                                }
+                                            },
+                                            "attributes": {
+                                                "name": "Esri Deutschland",
+                                                "name2": "Esri Deutschland GmbH",
+                                                "name3": "Niederlassung Hannover",
+                                                "street": "Schiffgraben 11",
+                                                "plz_city": "DE-30159 Hannover",
+                                                "tel": "+49 89 207 005 1520",
+                                                "email": "info@hannover.esri.de",
+                                                "link": "http://www.esri.de/"
+                                            },
+                                            "symbol": {
+                                                "color": [
+                                                    221,
+                                                    0,
+                                                    85,
+                                                    230
+                                                ],
+                                                "size": 10,
+                                                "angle": 0,
+                                                "xoffset": 0,
+                                                "yoffset": 0,
+                                                "type": "esriSMS",
+                                                "style": "esriSMSCircle",
+                                                "outline": {
+                                                    "color": [
+                                                        255,
+                                                        255,
+                                                        255,
+                                                        255
+                                                    ],
+                                                    "width": 0,
+                                                    "type": "esriSLS",
+                                                    "style": "esriSLSSolid"
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "geometry": {
+                                                "x": 797331,
+                                                "y": 6566126,
+                                                "spatialReference": {
+                                                    "wkid": 3857
+                                                }
+                                            },
+                                            "attributes": {
+                                                "name": "Esri Deutschland",
+                                                "name2": "Esri Deutschland GmbH",
+                                                "name3": "Niederlassung Bonn",
+                                                "street": "Rheinallee 24",
+                                                "plz_city": "DE-53173 Bonn",
+                                                "tel": "+49 89 207 005 1720",
+                                                "email": "info@bonn.esri.de",
+                                                "link": "http://www.esri.de/"
+                                            },
+                                            "symbol": {
+                                                "color": [
+                                                    221,
+                                                    0,
+                                                    85,
+                                                    230
+                                                ],
+                                                "size": 8,
+                                                "angle": 0,
+                                                "xoffset": 0,
+                                                "yoffset": 0,
+                                                "type": "esriSMS",
+                                                "style": "esriSMSCircle",
+                                                "outline": {
+                                                    "color": [
+                                                        255,
+                                                        255,
+                                                        255,
+                                                        255
+                                                    ],
+                                                    "width": 0,
+                                                    "type": "esriSLS",
+                                                    "style": "esriSLSSolid"
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "geometry": {
+                                                "x": 775186,
+                                                "y": 6612082,
+                                                "spatialReference": {
+                                                    "wkid": 3857
+                                                }
+                                            },
+                                            "attributes": {
+                                                "name": "Geocom",
+                                                "name2": "Geocom Informatik GmbH",
+                                                "name3": "",
+                                                "street": "Konrad-Adenauer-Ufer 41-45",
+                                                "plz_city": "DE-50668 Köln",
+                                                "tel": "+49 89 207 005 4500",
+                                                "email": "info@geocom-informatik.de",
+                                                "link": "http://www.geocom-informatik.de/"
+                                            },
+                                            "symbol": {
+                                                "color": [
+                                                    221,
+                                                    0,
+                                                    85,
+                                                    230
+                                                ],
+                                                "size": 8,
+                                                "angle": 0,
+                                                "xoffset": 0,
+                                                "yoffset": 0,
+                                                "type": "esriSMS",
+                                                "style": "esriSMSCircle",
+                                                "outline": {
+                                                    "color": [
+                                                        255,
+                                                        255,
+                                                        255,
+                                                        255
+                                                    ],
+                                                    "width": 0,
+                                                    "type": "esriSLS",
+                                                    "style": "esriSLSSolid"
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "geometry": {
+                                                "x": 775255,
+                                                "y": 6612103,
+                                                "spatialReference": {
+                                                    "wkid": 3857
+                                                }
+                                            },
+                                            "attributes": {
+                                                "name": "Esri Deutschland",
+                                                "name2": "Esri Deutschland GmbH",
+                                                "name3": "Niederlassung Köln",
+                                                "street": "Konrad-Adenauer-Ufer 41-45",
+                                                "plz_city": "DE-50668 Köln",
+                                                "tel": "+49 89 207 005 1760",
+                                                "email": "info@koeln.esri.de",
+                                                "link": "http://www.esri.de/"
+                                            },
+                                            "symbol": {
+                                                "color": [
+                                                    221,
+                                                    0,
+                                                    85,
+                                                    230
+                                                ],
+                                                "size": 8,
+                                                "angle": 0,
+                                                "xoffset": 0,
+                                                "yoffset": 0,
+                                                "type": "esriSMS",
+                                                "style": "esriSMSCircle",
+                                                "outline": {
+                                                    "color": [
+                                                        255,
+                                                        255,
+                                                        255,
+                                                        255
+                                                    ],
+                                                    "width": 0,
+                                                    "type": "esriSLS",
+                                                    "style": "esriSLSSolid"
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "geometry": {
+                                                "x": 915296,
+                                                "y": 6458062,
+                                                "spatialReference": {
+                                                    "wkid": 3857
+                                                }
+                                            },
+                                            "attributes": {
+                                                "name": "Esri Deutschland",
+                                                "name2": "Esri Deutschland GmbH",
+                                                "name3": "Niederlassung Wiesbaden",
+                                                "street": "Dwight-D.-Eisenhower-Straße 9",
+                                                "plz_city": "DE-65197 Wiesbaden",
+                                                "tel": "+49 89 207 005 1620",
+                                                "email": "info@wiesbaden.esri.de",
+                                                "link": "http://www.esri.de/"
+                                            },
+                                            "symbol": {
+                                                "color": [
+                                                    221,
+                                                    0,
+                                                    85,
+                                                    230
+                                                ],
+                                                "size": 8,
+                                                "angle": 0,
+                                                "xoffset": 0,
+                                                "yoffset": 0,
+                                                "type": "esriSMS",
+                                                "style": "esriSMSCircle",
+                                                "outline": {
+                                                    "color": [
+                                                        255,
+                                                        255,
+                                                        255,
+                                                        255
+                                                    ],
+                                                    "width": 0,
+                                                    "type": "esriSLS",
+                                                    "style": "esriSLSSolid"
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "geometry": {
+                                                "x": 948700,
+                                                "y": 6005504,
+                                                "spatialReference": {
+                                                    "wkid": 3857
+                                                }
+                                            },
+                                            "attributes": {
+                                                "name": "Esri Schweiz",
+                                                "name2": "Esri Schweiz AG",
+                                                "name3": "",
+                                                "street": "Josefstrasse 218",
+                                                "plz_city": "CH-8005 Zürich",
+                                                "tel": "+41 58 267 18 00",
+                                                "email": "info@esri.ch",
+                                                "link": "http://www.esri.ch/"
+                                            },
+                                            "symbol": {
+                                                "color": [
+                                                    221,
+                                                    0,
+                                                    85,
+                                                    230
+                                                ],
+                                                "size": 8,
+                                                "angle": 0,
+                                                "xoffset": 0,
+                                                "yoffset": 0,
+                                                "type": "esriSMS",
+                                                "style": "esriSMSCircle",
+                                                "outline": {
+                                                    "color": [
+                                                        255,
+                                                        255,
+                                                        255,
+                                                        255
+                                                    ],
+                                                    "width": 0,
+                                                    "type": "esriSLS",
+                                                    "style": "esriSLSSolid"
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "geometry": {
+                                                "x": 694443,
+                                                "y": 5841336,
+                                                "spatialReference": {
+                                                    "wkid": 3857
+                                                }
+                                            },
+                                            "attributes": {
+                                                "name": "Esri Schweiz",
+                                                "name2": "Esri Suisse SA",
+                                                "name3": "",
+                                                "street": "Rte du Cordon 5 - 7",
+                                                "plz_city": "CH-1260 Nyon",
+                                                "tel": "+41 58 267 18 60",
+                                                "email": "info@nyon.esri.ch",
+                                                "link": "http://www.esri.ch/"
+                                            },
+                                            "symbol": {
+                                                "color": [
+                                                    221,
+                                                    0,
+                                                    85,
+                                                    230
+                                                ],
+                                                "size": 8,
+                                                "angle": 0,
+                                                "xoffset": 0,
+                                                "yoffset": 0,
+                                                "type": "esriSMS",
+                                                "style": "esriSMSCircle",
+                                                "outline": {
+                                                    "color": [
+                                                        255,
+                                                        255,
+                                                        255,
+                                                        255
+                                                    ],
+                                                    "width": 0,
+                                                    "type": "esriSLS",
+                                                    "style": "esriSLSSolid"
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "geometry": {
+                                                "x": 847334,
+                                                "y": 5952537,
+                                                "spatialReference": {
+                                                    "wkid": 3857
+                                                }
+                                            },
+                                            "attributes": {
+                                                "name": "Geocom",
+                                                "name2": "Geocom Informatik AG",
+                                                "name3": "",
+                                                "street": "Kirchbergstrasse 107",
+                                                "plz_city": "CH-3400 Burgdorf",
+                                                "tel": "+41 34 428 30 30",
+                                                "email": "info@geocom.ch",
+                                                "link": "http://www.geocom.ch/"
+                                            },
+                                            "symbol": {
+                                                "color": [
+                                                    221,
+                                                    0,
+                                                    85,
+                                                    230
+                                                ],
+                                                "size": 12,
+                                                "angle": 0,
+                                                "xoffset": 0,
+                                                "yoffset": 0,
+                                                "type": "esriSMS",
+                                                "style": "esriSMSSquare",
+                                                "outline": {
+                                                    "color": [
+                                                        255,
+                                                        255,
+                                                        255,
+                                                        255
+                                                    ],
+                                                    "width": 0,
+                                                    "type": "esriSLS",
+                                                    "style": "esriSLSSolid"
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "geometry": {
+                                                "x": 948800,
+                                                "y": 6005504,
+                                                "spatialReference": {
+                                                    "wkid": 3857
+                                                }
+                                            },
+                                            "attributes": {
+                                                "name": "Geocom",
+                                                "name2": "Geocom Informatik AG",
+                                                "name3": "",
+                                                "street": "Josefstrasse 218",
+                                                "plz_city": "CH-8005 Zürich",
+                                                "tel": "+41 34 428 30 30",
+                                                "email": "info@geocom.ch",
+                                                "link": "http://www.geocom.ch/"
+                                            },
+                                            "symbol": {
+                                                "color": [
+                                                    221,
+                                                    0,
+                                                    85,
+                                                    230
+                                                ],
+                                                "size": 8,
+                                                "angle": 0,
+                                                "xoffset": 0,
+                                                "yoffset": 0,
+                                                "type": "esriSMS",
+                                                "style": "esriSMSCircle",
+                                                "outline": {
+                                                    "color": [
+                                                        255,
+                                                        255,
+                                                        255,
+                                                        255
+                                                    ],
+                                                    "width": 0,
+                                                    "type": "esriSLS",
+                                                    "style": "esriSLSSolid"
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "geometry": {
+                                                "x": 1109468,
+                                                "y": 7097122,
+                                                "spatialReference": {
+                                                    "wkid": 3857
+                                                }
+                                            },
+                                            "attributes": {
+                                                "name": "Geocom",
+                                                "name2": "Geocom Informatik GmbH",
+                                                "name3": "",
+                                                "street": "Willhoop 3",
+                                                "plz_city": "DE-22453 Hamburg",
+                                                "tel": "+49 4052 299 3720",
+                                                "email": "info@geocom-informatik.de",
+                                                "link": "http://www.geocom-informatik.de/"
+                                            },
+                                            "symbol": {
+                                                "color": [
+                                                    221,
+                                                    0,
+                                                    85,
+                                                    230
+                                                ],
+                                                "size": 8,
+                                                "angle": 0,
+                                                "xoffset": 0,
+                                                "yoffset": 0,
+                                                "type": "esriSMS",
+                                                "style": "esriSMSCircle",
+                                                "outline": {
+                                                    "color": [
+                                                        255,
+                                                        255,
+                                                        255,
+                                                        255
+                                                    ],
+                                                    "width": 0,
+                                                    "type": "esriSLS",
+                                                    "style": "esriSLSSolid"
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "geometry": {
+                                                "x": 851833,
+                                                "y": 6788378,
+                                                "spatialReference": {
+                                                    "wkid": 3857
+                                                }
+                                            },
+                                            "attributes": {
+                                                "name": "con terra",
+                                                "name2": "con terra GmbH",
+                                                "name3": "",
+                                                "street": "Martin-Luther-King-Weg 24",
+                                                "plz_city": "DE-48155 Muenster",
+                                                "tel": "+49 251 74745 0",
+                                                "email": "conterra@conterra.de",
+                                                "link": "http://www.conterra.de/"
+                                            },
+                                            "symbol": {
+                                                "color": [
+                                                    221,
+                                                    0,
+                                                    85,
+                                                    230
+                                                ],
+                                                "size": 12,
+                                                "angle": 0,
+                                                "xoffset": 0,
+                                                "yoffset": 0,
+                                                "type": "esriSMS",
+                                                "style": "esriSMSSquare",
+                                                "outline": {
+                                                    "color": [
+                                                        255,
+                                                        255,
+                                                        255,
+                                                        255
+                                                    ],
+                                                    "width": 0,
+                                                    "type": "esriSLS",
+                                                    "style": "esriSLSSolid"
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            ],
+                            "operationalLayer": [
+                                {
+                                    "id": "bathingwater",
+                                    "title": "${map.operational.bathingwater.title}",
+                                    "enabled": false,
+                                    "service": "bathingwater",
+                                    "category": {
+                                        "title": "${map.operational.bathingwater.title}",
+                                        "description": "Map is showing bathing monitoring locations and associated attributive data from 2002 till 2012 in more detailed scales and aggregated data by countries. For the scales 1:5.000.001 and less detailed, data are aggregated by country. In such case, stacked bars show percentage of bathing water quality for coastal and inland waters together. Number of bathing waters within certain category is seen in pop up window which can be turned on with a click on single country. For the scale range 1:5 000.000 till1:700,001, individual bathing water sites (points) are visible instead of classified stacked charts and are coloured according the classification of bathing water quality. Symbol size depends on the map scale (in more detailed map scales symbols are bigger). For the scale 1:700,000 and more detailed, symbol of bather in a square appears instead of points. Symbol size depends on the map scale.",
+                                        "imgUrl": "${app}:images/mapCover2.png"
+                                    },
+                                    "children": [
+                                        {
+                                            "layer": "0",
+                                            "enabled": true
+                                        },
+                                        {
+                                            "layer": "1",
+                                            "enabled": true
+                                        },
+                                        {
+                                            "layer": "2",
+                                            "enabled": true
+                                        },
+                                        {
+                                            "layer": "3",
+                                            "enabled": true
+                                        },
+                                        {
+                                            "layer": "4",
+                                            "enabled": true
+                                        },
+                                        {
+                                            "layer": "5",
+                                            "enabled": true
+                                        },
+                                        {
+                                            "layer": "6",
+                                            "enabled": true
+                                        }
+                                    ],
+                                    "opacity": 1
+                                },
+                                {
+                                    "id": "natura2000",
+                                    "title": "${map.operational.natura2000.title}",
+                                    "enabled": false,
+                                    "service": "natura000",
+                                    "category": {
+                                        "title": "${map.operational.natura2000.title}",
+                                        "description": "Natura 2000 is the key instrument to protect biodiversity in the European Union. It is an ecological network of protected areas, set up to ensure the survival of Europe's most valuable species and habitats. Natura 2000 is based on the 1979 Birds Directive and the 1992 Habitats Directive. The green infrastructure it provides safeguards numerous ecosystem services and ensures that Europe's natural systems remain healthy and resilient.",
+                                        "imgUrl": "${app}:images/mapCover3.png"
+                                    },
+                                    "children": [
+                                        {
+                                            "layer": "0",
+                                            "enabled": false
+                                        },
+                                        {
+                                            "layer": "1",
+                                            "enabled": true
+                                        },
+                                        {
+                                            "layer": "2",
+                                            "enabled": true
+                                        },
+                                        {
+                                            "layer": "3",
+                                            "enabled": true
+                                        },
+                                        {
+                                            "layer": "4",
+                                            "enabled": true
+                                        },
+                                        {
+                                            "layer": "5",
+                                            "enabled": true
+                                        },
+                                        {
+                                            "layer": "6",
+                                            "enabled": true
+                                        },
+                                        {
+                                            "layer": "7",
+                                            "enabled": true
+                                        },
+                                        {
+                                            "layer": "8",
+                                            "enabled": true
+                                        }
+                                    ],
+                                    "opacity": 1
+                                },
+                                {
+                                    "id": "regions",
+                                    "title": "${map.operational.regions.title}",
+                                    "enabled": false,
+                                    "service": "regions",
+                                    "category": {
+                                        "title": "${map.operational.regions.title}",
+                                        "description": "The bio-geographic regions dataset contains the official delineations used in the Habitats Directive (92/43/EEC) and for the EMERALD Network set up under the Convention on the Conservation of European Wildlife and Natural Habitats (Bern Convention)",
+                                        "imgUrl": "${app}:images/mapCover1.png"
+                                    },
+                                    "children": [
+                                        {
+                                            "layer": "0",
+                                            "enabled": true
+                                        },
+                                        {
+                                            "layer": "1",
+                                            "enabled": false
+                                        },
+                                        {
+                                            "layer": "2",
+                                            "enabled": false
+                                        }
+                                    ],
+                                    "opacity": 0.5
+                                }
+                            ],
+                            "baseLayer": [
+                                {
+                                    "title": "${map.base.aerial.title}",
+                                    "enabled": false,
+                                    "service": "worldimage",
+                                    "children": [
+                                        {
+                                            "layer": "0",
+                                            "enabled": true
+                                        },
+                                        {
+                                            "layer": "1",
+                                            "enabled": true
+                                        },
+                                        {
+                                            "layer": "2",
+                                            "enabled": true
+                                        },
+                                        {
+                                            "layer": "3",
+                                            "enabled": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "title": "${map.base.topo.title}",
+                                    "enabled": true,
+                                    "service": "worldtopo",
+                                    "children": [
+                                        {
+                                            "layer": "0",
+                                            "enabled": true
+                                        },
+                                        {
+                                            "layer": "5",
+                                            "enabled": true
+                                        },
+                                        {
+                                            "layer": "10",
+                                            "enabled": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "title": "${map.base.streets.title}",
+                                    "enabled": false,
+                                    "service": "streets",
+                                    "children": [
+                                        {
+                                            "layer": "0",
+                                            "enabled": true
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            "MapState": {
+                "initialExtent": {
+                    "xmin": -896965.2750203621,
+                    "xmax": 3212289.3655896215,
+                    "ymin": 5170567.199262223,
+                    "ymax": 8086181.206171212,
+                    "wkid": 3857
+                }
+            },
+            "MapWidgetFactory": {
+                "esriMapOpts": {
+                    "slider": false,
+                    "nav": false,
+                    "logo": true,
+                    "sliderStyle": "small",
+                    "doubleClickZoom": true,
+                    "clickRecenter": true,
+                    "pan": true,
+                    "rubberBandZoom": true,
+                    "keyboardNavigation": true,
+                    "scrollWheelZoom": true,
+                    "sliderPosition": "bottom-right",
+                    "displayGraphicsOnPan": true,
+                    "fadeOnZoom": true,
+                    "showAttribution": true,
+                    "sliderOrientation": "vertical",
+                    "sliderLabels": [
+                        ""
+                    ],
+                    "navigationMode": "css-transforms"
+                }
+            },
+            "MappingResourceRegistryFactory": {
+                "_knownServices": {
+                    "services": [
+                        {
+                            "id": "worldimage",
+                            "url": "http://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+                            "type": "AGS_TILED",
+                            "title": "${map.base.aerial.title}",
+                            "description": "${map.base.aerial.description}",
+                            "layers": [
+                                {
+                                    "id": "0",
+                                    "title": "World Imagery"
+                                },
+                                {
+                                    "id": "1",
+                                    "title": "Low Resolution 15m Imagery"
+                                },
+                                {
+                                    "id": "2",
+                                    "title": "High Resolution 60cm Imagery"
+                                },
+                                {
+                                    "id": "3",
+                                    "title": "High Resolution 30cm Imagery"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "worldtopo",
+                            "url": "http://services.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer",
+                            "type": "AGS_TILED",
+                            "title": "${map.base.topo.title}",
+                            "description": "${map.base.topo.description}",
+                            "layers": [
+                                {
+                                    "id": "0",
+                                    "title": "Topographic Info"
+                                },
+                                {
+                                    "id": "1",
+                                    "title": "Elevation (m)",
+                                    "parentId": "0"
+                                },
+                                {
+                                    "id": "2",
+                                    "title": "Elevation (ft)",
+                                    "parentId": "0"
+                                },
+                                {
+                                    "id": "3",
+                                    "title": "Slope",
+                                    "parentId": "0"
+                                },
+                                {
+                                    "id": "4",
+                                    "title": "Aspect",
+                                    "parentId": "0"
+                                },
+                                {
+                                    "id": "5",
+                                    "title": "Places Info"
+                                },
+                                {
+                                    "id": "6",
+                                    "title": "Place Names (Country Level)",
+                                    "parentId": "5",
+                                    "maxScale": 80000000
+                                },
+                                {
+                                    "id": "7",
+                                    "title": "Place Names (State Level)",
+                                    "parentId": "5",
+                                    "maxScale": 80000001
+                                },
+                                {
+                                    "id": "8",
+                                    "title": "Place Names (County Level)",
+                                    "parentId": "5",
+                                    "maxScale": 1500001
+                                },
+                                {
+                                    "id": "9",
+                                    "title": "Place Names (City Level)",
+                                    "parentId": "5",
+                                    "maxScale": 399999
+                                },
+                                {
+                                    "id": "10",
+                                    "title": "Citations"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "streets",
+                            "description": "${map.base.streets.description}",
+                            "url": "http://services.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer",
+                            "type": "AGS_TILED",
+                            "title": "${map.base.streets.title}",
+                            "layers": [
+                                {
+                                    "id": "0",
+                                    "title": "${map.base.streets.title}"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "bathingwater",
+                            "url": "http://water.discomap.eea.europa.eu/arcgis/rest/services/BathingWater/BathingWater_Dyna_WM/MapServer",
+                            "type": "AGS_DYNAMIC",
+                            "title": "BathingWater",
+                            "description": "Map is showing bathing monitoring locations and associated attributive data from 2002 till 2012 in more detailed scales and aggregated data by countries. For the scales 1:5.000.001 and less detailed, data are aggregated by country. In such case, stacked bars show percentage of bathing water quality for coastal and inland waters together. Number of bathing waters within certain category is seen in pop up window which can be turned on with a click on single country. For the scale range 1:5 000.000 till1:700,001, individual bathing water sites (points) are visible instead of classified stacked charts and are coloured according the classification of bathing water quality. Symbol size depends on the map scale (in more detailed map scales symbols are bigger). For the scale 1:700,000 and more detailed, symbol of bather in a square appears instead of points. Symbol size depends on the map scale.",
+                            "layers": [
+                                {
+                                    "id": "0",
+                                    "title": "Bathing water monitoring by country",
+                                    "queryable": false
+                                },
+                                {
+                                    "id": "1",
+                                    "title": "Bathing water quality",
+                                    "parentId": "0",
+                                    "maxScale": 30000001
+                                },
+                                {
+                                    "id": "2",
+                                    "title": "Bathing water quality",
+                                    "parentId": "0",
+                                    "maxScale": 5000001,
+                                    "minScale": 30000000
+                                },
+                                {
+                                    "id": "3",
+                                    "title": "Bathing water monitoring by location",
+                                    "queryable": false
+                                },
+                                {
+                                    "id": "4",
+                                    "title": "Bathing water quality",
+                                    "parentId": "3",
+                                    "maxScale": 3000001,
+                                    "minScale": 5000000
+                                },
+                                {
+                                    "id": "5",
+                                    "title": "Bathing water quality",
+                                    "parentId": "3",
+                                    "maxScale": 700001,
+                                    "minScale": 3000000
+                                },
+                                {
+                                    "id": "6",
+                                    "title": "Bathing water quality",
+                                    "parentId": "3",
+                                    "maxScale": 500001,
+                                    "minScale": 700000
+                                }
+                            ]
+                        },
+                        {
+                            "id": "regions",
+                            "url": "http://bio.discomap.eea.europa.eu/arcgis/rest/services/BioRegions/Biogeographicalregions_Dyna_WM/MapServer",
+                            "type": "AGS_DYNAMIC",
+                            "title": "Regions",
+                            "description": "The bio-geographic regions dataset contains the official delineations used in the Habitats Directive (92/43/EEC) and for the EMERALD Network set up under the Convention on the Conservation of European Wildlife and Natural Habitats (Bern Convention)",
+                            "layers": [
+                                {
+                                    "id": "0",
+                                    "title": "EU27 Biogeographical Regions 2011"
+                                },
+                                {
+                                    "id": "1",
+                                    "title": "EU27 Biogeographical Regions 2008"
+                                },
+                                {
+                                    "id": "2",
+                                    "title": "EU27 Biogeographical Regions 2005"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "natura000",
+                            "url": "http://discomap.eea.europa.eu/arcgis/rest/services/Bio/Natura2000_Dyna_WM/MapServer",
+                            "type": "AGS_DYNAMIC",
+                            "title": "Natura2000",
+                            "description": "Natura 2000 is the key instrument to protect biodiversity in the European Union. It is an ecological network of protected areas, set up to ensure the survival of Europe's most valuable species and habitats. Natura 2000 is based on the 1979 Birds Directive and the 1992 Habitats Directive. The green infrastructure it provides safeguards numerous ecosystem services and ensures that Europe's natural systems remain healthy and resilient.",
+                            "layers": [
+                                {
+                                    "id": "0",
+                                    "title": "Query Sites"
+                                },
+                                {
+                                    "id": "1",
+                                    "title": "Habitats Directive Sites (SCI)",
+                                    "queryable": false
+                                },
+                                {
+                                    "id": "2",
+                                    "title": "Scale under 1:10,000,000",
+                                    "parentId": "1",
+                                    "maxScale": 10000000
+                                },
+                                {
+                                    "id": "3",
+                                    "title": "Scale between 1:100.000 and 1:10,000,000",
+                                    "parentId": "1",
+                                    "maxScale": 300000,
+                                    "minScale": 9999999
+                                },
+                                {
+                                    "id": "4",
+                                    "title": "Scale above 1:100,000",
+                                    "parentId": "1",
+                                    "minScale": 299999
+                                },
+                                {
+                                    "id": "5",
+                                    "title": "Bird Directive Sites (SPA)",
+                                    "queryable": false
+                                },
+                                {
+                                    "id": "6",
+                                    "title": "Scale under 1:10,000,000",
+                                    "parentId": "5",
+                                    "maxScale": 10000000
+                                },
+                                {
+                                    "id": "7",
+                                    "title": "Scale between 1:100,000 and 1:10,000,000",
+                                    "parentId": "5",
+                                    "maxScale": 300000,
+                                    "minScale": 9999999
+                                },
+                                {
+                                    "id": "8",
+                                    "title": "Scale above 1:100,000",
+                                    "parentId": "5",
+                                    "minScale": 299999
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            "enabled": true
+        },
+        "mapdesk": {
+            "enabled": true
+        },
+        "mapflow": {
+            "enabled": true
+        },
+        "maptip": {
+            "enabled": true
+        },
+        "measurement": {
+            "enabled": true
+        },
+        "mobiletoc": {
+            "enabled": true
+        },
+        "mobileview": {
+            "enabled": true
+        },
+        "navigationtoolset": {
+            "enabled": true
+        },
+        "notifier": {
+            "enabled": true
+        },
+        "omnisearch": {
+            "OmniSearchFactory": {
+                "comboBoxOpts": {
+                    "selectFirstResultOnEnter": false
+                }
+            },
+            "enabled": true
+        },
+        "overviewmap": {
+            "OverviewMap": {
+                "serviceDefinition": {
+                    "service": "worldtopo",
+                    "layers": [
+                        "*"
+                    ]
+                }
+            },
+            "enabled": true
+        },
+        "parametermanager": {
+            "enabled": true
+        },
+        "qrcode": {
+            "enabled": true
+        },
+        "redlining": {
+            "enabled": true
+        },
+        "reportstore": {
+            "enabled": true
+        },
+        "reporttool": {
+            "ReportTask": {
+                "mappings": [
+                    {
+                        "storeId": "regions_0",
+                        "reportId": "s_default"
+                    },
+                    {
+                        "storeId": "bathingwater_4",
+                        "reportId": "s_default"
+                    },
+                    {
+                        "storeId": "bathingwater_1",
+                        "reportId": "s_default"
+                    },
+                    {
+                        "storeId": "_AGS_STORE_1351604543797",
+                        "reportId": "s_default"
+                    }
+                ]
+            },
+            "enabled": true
+        },
+        "resultcenter": {
+            "ActionController": {
+                "zoomToFeatures": true,
+                "zoomToSelected": true,
+                "centerSelected": true,
+                "zoomAfterDeletion": true
+            },
+            "DataView": {
+                "GRID": {
+                    "checkboxSelection": true,
+                    "columns": [
+                        {
+                            "matches": {
+                                "identifier": true,
+                                "type": "number"
+                            },
+                            "title": "ID"
+                        },
+                        {
+                            "matches": {
+                                "name": "NAME"
+                            },
+                            "title": "Title",
+                            "width": 32
+                        },
+                        {
+                            "matches": {
+                                "name": {
+                                    "$in": [
+                                        "AREA",
+                                        "PERIMETER"
+                                    ]
+                                }
+                            },
+                            "skip": true
+                        },
+                        {
+                            "matches": {
+                                "name": {
+                                    "$exists": true
+                                }
+                            },
+                            "width": 12
+                        }
+                    ]
+                },
+                "itemsPerPage": 10,
+                "ICON": {
+                    "iconFields": [
+                        "adapter"
+                    ]
+                }
+            },
+            "FeatureMapVisualizer": {
+                "useDataViewPaging": false
+            },
+            "GraphicResolverFactory": {
+                "symbolLookup": {
+                    "lookupAttributeName": "type",
+                    "lookupTable": {
+                        "IMAGE": {
+                            "type": "esriPMS",
+                            "url": "images/seasons/marker_image.png",
+                            "contentType": "image/png",
+                            "width": 33.3333,
+                            "height": 31.333,
+                            "angle": 0,
+                            "xoffset": 0,
+                            "yoffset": 0
+                        },
+                        "IMAGE-selected": {
+                            "type": "esriPMS",
+                            "url": "images/seasons/marker_image_selected.png",
+                            "contentType": "image/png",
+                            "width": 33.3333,
+                            "height": 31.333,
+                            "angle": 0,
+                            "xoffset": 0,
+                            "yoffset": 0
+                        },
+                        "IMAGE-selected-highlighted": {
+                            "type": "esriPMS",
+                            "url": "images/seasons/marker_image_selected.png",
+                            "contentType": "image/png",
+                            "width": 42.5532,
+                            "height": 40,
+                            "angle": 0,
+                            "xoffset": 0,
+                            "yoffset": 0
+                        },
+                        "IMAGE-highlighted": {
+                            "type": "esriPMS",
+                            "url": "images/seasons/marker_image.png",
+                            "contentType": "image/png",
+                            "width": 42.5532,
+                            "height": 40,
+                            "angle": 0,
+                            "xoffset": 0,
+                            "yoffset": 0
+                        },
+                        "DOCUMENT": {
+                            "type": "esriPMS",
+                            "url": "images/seasons/marker_wikipedia.png",
+                            "contentType": "image/png",
+                            "width": 33.3333,
+                            "height": 31.333,
+                            "angle": 0,
+                            "xoffset": 0,
+                            "yoffset": 0
+                        },
+                        "DOCUMENT-selected": {
+                            "type": "esriPMS",
+                            "url": "images/seasons/marker_wikipedia_selected.png",
+                            "contentType": "image/png",
+                            "width": 33.3333,
+                            "height": 31.333,
+                            "angle": 0,
+                            "xoffset": 0,
+                            "yoffset": 0
+                        },
+                        "DOCUMENT-highlighted": {
+                            "type": "esriPMS",
+                            "url": "images/seasons/marker_wikipedia.png",
+                            "contentType": "image/png",
+                            "width": 42.5532,
+                            "height": 40,
+                            "angle": 0,
+                            "xoffset": 0,
+                            "yoffset": 0
+                        },
+                        "DOCUMENT-selected-highlighted": {
+                            "type": "esriPMS",
+                            "url": "images/seasons/marker_wikipedia_selected.png",
+                            "contentType": "image/png",
+                            "width": 42.5532,
+                            "height": 40,
+                            "angle": 0,
+                            "xoffset": 0,
+                            "yoffset": 0
+                        }
+                    }
+                }
+            },
+            "TriggerShowResultCenterCommand": {
+                "showToolOnData": true,
+                "autoOpen": true,
+                "hideToolOnEmpty": true,
+                "autoClose": true
+            },
+            "enabled": true
+        },
+        "scalebar": {
+            "enabled": true
+        },
+        "selection": {
+            "SelectionAction": {
+                "autoDeactivateTool": true
+            },
+            "SelectionTool": [
+                {
+                    "id": "selectLocationInfoItems",
+                    "storeId": "infoservice",
+                    "title": "${selection.infoservice}",
+                    "iconClass": "selectionIconExtent"
+                },
+                {
+                    "geoType": "Extent",
+                    "iconClass": "selectionIconExtent",
+                    "clickTolerance": 0,
+                    "id": "selectionTool_bathingwater_1_extent",
+                    "storeId": "bathingwater_1",
+                    "title": "${selection.bathingwater_1.extent}"
+                },
+                {
+                    "geoType": "Circle",
+                    "iconClass": "selectionIconCircle",
+                    "clickTolerance": 0,
+                    "id": "selectionTool_natura2000_2_6_circle",
+                    "storeId": "composite_natura2000_2_6",
+                    "title": "${selection.composite_natura2000_2_6.circle}"
+                },
+                {
+                    "geoType": "FreehandPolygon",
+                    "iconClass": "selectionIconFreehandPolygon",
+                    "clickTolerance": 0,
+                    "id": "selectionTool_natura2000_2_6_freehand",
+                    "storeId": "composite_natura2000_2_6",
+                    "title": "${selection.composite_natura2000_2_6.freehand}"
+                },
+                {
+                    "geoType": "Point",
+                    "iconClass": "selectionIconPoint",
+                    "clickTolerance": 5,
+                    "id": "selectionTool_bathingwater_1_point",
+                    "storeId": "bathingwater_1",
+                    "title": "${selection.bathingwater_1.point}"
+                },
+                {
+                    "geoType": "Circle",
+                    "iconClass": "selectionIconCircle",
+                    "clickTolerance": 0,
+                    "id": "selectionTool_bathingwater_1_circle",
+                    "storeId": "bathingwater_1",
+                    "title": "${selection.bathingwater_1.circle}"
+                },
+                {
+                    "geoType": "FreehandPolygon",
+                    "iconClass": "selectionIconFreehandPolygon",
+                    "clickTolerance": 0,
+                    "id": "selectionTool_bathingwater_1_freehand",
+                    "storeId": "bathingwater_1",
+                    "title": "${selection.bathingwater_1.freehand}"
+                },
+                {
+                    "geoType": "Extent",
+                    "iconClass": "selectionIconExtent",
+                    "clickTolerance": 0,
+                    "id": "selectionTool_bathingwater_4_extent",
+                    "storeId": "bathingwater_4",
+                    "title": "${selection.bathingwater_4.extent}"
+                },
+                {
+                    "geoType": "Point",
+                    "iconClass": "selectionIconPoint",
+                    "clickTolerance": 5,
+                    "id": "selectionTool_bathingwater_4_point",
+                    "storeId": "bathingwater_4",
+                    "title": "${selection.bathingwater_4.point}"
+                },
+                {
+                    "geoType": "Circle",
+                    "iconClass": "selectionIconCircle",
+                    "clickTolerance": 0,
+                    "id": "selectionTool_bathingwater_4_circle",
+                    "storeId": "bathingwater_4",
+                    "title": "${selection.bathingwater_4.circle}"
+                },
+                {
+                    "geoType": "FreehandPolygon",
+                    "iconClass": "selectionIconFreehandPolygon",
+                    "clickTolerance": 0,
+                    "id": "selectionTool_bathingwater_4_freehand",
+                    "storeId": "bathingwater_4",
+                    "title": "${selection.bathingwater_4.freehand}"
+                },
+                {
+                    "geoType": "Extent",
+                    "iconClass": "selectionIconExtent",
+                    "clickTolerance": 0,
+                    "id": "selectionTool_regions_0_extent",
+                    "storeId": "regions_0",
+                    "title": "${selection.regions_0.extent}"
+                },
+                {
+                    "geoType": "Point",
+                    "iconClass": "selectionIconPoint",
+                    "clickTolerance": 5,
+                    "id": "selectionTool_regions_0_point",
+                    "storeId": "regions_0",
+                    "title": "${selection.regions_0.point}"
+                },
+                {
+                    "geoType": "Circle",
+                    "iconClass": "selectionIconCircle",
+                    "clickTolerance": 0,
+                    "id": "selectionTool_regions_0_circle",
+                    "storeId": "regions_0",
+                    "title": "${selection.regions_0.circle}"
+                },
+                {
+                    "geoType": "FreehandPolygon",
+                    "iconClass": "selectionIconFreehandPolygon",
+                    "clickTolerance": 0,
+                    "id": "selectionTool_regions_0_freehand",
+                    "storeId": "regions_0",
+                    "title": "${selection.regions_0.freehand}"
+                },
+                {
+                    "geoType": "Extent",
+                    "iconClass": "selectionIconExtent",
+                    "clickTolerance": 0,
+                    "id": "selectionTool_natura2000_2_6_extent",
+                    "storeId": "composite_natura2000_2_6",
+                    "title": "${selection.composite_natura2000_2_6.extent}"
+                },
+                {
+                    "geoType": "Point",
+                    "iconClass": "selectionIconPoint",
+                    "clickTolerance": 5,
+                    "id": "selectionTool_natura2000_2_6_point",
+                    "storeId": "composite_natura2000_2_6",
+                    "title": "${selection.composite_natura2000_2_6.point}"
+                }
+            ],
+            "enabled": true
+        },
+        "splashscreen": {
+            "enabled": true
+        },
+        "templatelayout": {
+            "enabled": true
+        },
+        "templates": {
+            "TemplateModel": {
+                "_selectedTemplate": "seasons",
+                "_templates": [
+                    {
+                        "name": "seasons"
+                    }
+                ]
+            },
+            "TemplateSelector": {
+                "componentEnabled": false
+            },
+            "enabled": true
+        },
+        "themes": {
+            "ThemeModel": {
+                "_selectedTheme": "plus-orange",
+                "_themes": [
+                    {
+                        "name": "plus-orange",
+                        "location": "themes-plus"
+                    },
+                    {
+                        "name": "plus-ice",
+                        "location": "themes-plus"
+                    },
+                    {
+                        "name": "plus-light",
+                        "location": "themes-plus"
+                    },
+                    {
+                        "name": "plus-lime",
+                        "location": "themes-plus"
+                    },
+                    {
+                        "name": "plus-purple",
+                        "location": "themes-plus"
+                    },
+                    {
+                        "name": "everlasting",
+                        "location": "themes-plus"
+                    }
+                ]
+            },
+            "ThemeSelector": {
+                "componentEnabled": false
+            },
+            "enabled": true
+        },
+        "themes-plus": {
+            "enabled": true
+        },
+        "toolrules": {
+            "ToolRuleManager": {
+                "_rules": {
+                    "agsprinttool": {
+                        "ruleSuccessProperty": "visibility",
+                        "not": {
+                            "subLayoutNames": [
+                                "mobile_portrait",
+                                "mobile_landscape",
+                                "tablet_portrait",
+                                "tablet_landscape"
+                            ]
+                        }
+                    },
+                    "printtool": {
+                        "ruleSuccessProperty": "visibility",
+                        "not": {
+                            "subLayoutNames": [
+                                "mobile_portrait",
+                                "mobile_landscape"
+                            ]
+                        }
+                    },
+                    "urlEncoder": {
+                        "ruleSuccessProperty": "visibility",
+                        "not": {
+                            "subLayoutNames": [
+                                "mobile_portrait",
+                                "mobile_landscape"
+                            ]
+                        }
+                    },
+                    "measurementtool": {
+                        "ruleSuccessProperty": "visibility",
+                        "not": {
+                            "subLayoutNames": [
+                                "mobile_portrait",
+                                "mobile_landscape"
+                            ]
+                        }
+                    },
+                    "redlining_tools": {
+                        "ruleSuccessProperty": "visibility",
+                        "not": {
+                            "subLayoutNames": [
+                                "mobile_portrait",
+                                "mobile_landscape"
+                            ]
+                        }
+                    },
+                    "selection_tools": {
+                        "ruleSuccessProperty": "visibility",
+                        "not": {
+                            "subLayoutNames": [
+                                "mobile_portrait",
+                                "mobile_landscape"
+                            ]
+                        }
+                    },
+                    "navigation_tools": {
+                        "ruleSuccessProperty": "visibility",
+                        "not": {
+                            "subLayoutNames": [
+                                "mobile_portrait",
+                                "mobile_landscape"
+                            ]
+                        }
+                    },
+                    "coordinateFinderTool": {
+                        "ruleSuccessProperty": "visibility",
+                        "not": {
+                            "subLayoutNames": [
+                                "mobile_portrait",
+                                "mobile_landscape"
+                            ]
+                        }
+                    },
+                    "appsOverviewToggleTool": {
+                        "ruleSuccessProperty": "visibility",
+                        "not": {
+                            "subLayoutNames": [
+                                "mobile_portrait",
+                                "mobile_landscape"
+                            ]
+                        }
+                    },
+                    "bookmarkstool": {
+                        "ruleSuccessProperty": "visibility",
+                        "not": {
+                            "subLayoutNames": [
+                                "mobile_portrait",
+                                "mobile_landscape"
+                            ]
+                        }
+                    },
+                    "magnifier": {
+                        "ruleSuccessProperty": "visibility",
+                        "not": {
+                            "subLayoutNames": [
+                                "mobile_portrait",
+                                "mobile_landscape",
+                                "tablet_portrait",
+                                "tablet_landscape"
+                            ]
+                        }
+                    },
+                    "overviewmap": {
+                        "ruleSuccessProperty": "visibility",
+                        "not": {
+                            "subLayoutNames": [
+                                "mobile_portrait",
+                                "mobile_landscape"
+                            ]
+                        }
+                    },
+                    "selectionTool_bathingwater_1_extent": {
+                        "themes": [
+                            "bathingwater"
+                        ],
+                        "scaleRange": {
+                            "max": 5000001
+                        },
+                        "ruleSuccessProperty": "visibility"
+                    },
+                    "selectionTool_bathingwater_1_point": {
+                        "themes": [
+                            "bathingwater"
+                        ],
+                        "scaleRange": {
+                            "max": 5000001
+                        },
+                        "ruleSuccessProperty": "visibility"
+                    },
+                    "selectionTool_bathingwater_1_circle": {
+                        "themes": [
+                            "bathingwater"
+                        ],
+                        "scaleRange": {
+                            "max": 5000001
+                        },
+                        "ruleSuccessProperty": "visibility"
+                    },
+                    "selectionTool_bathingwater_1_freehand": {
+                        "themes": [
+                            "bathingwater"
+                        ],
+                        "scaleRange": {
+                            "max": 5000001
+                        },
+                        "ruleSuccessProperty": "visibility"
+                    },
+                    "selectionTool_bathingwater_4_extent": {
+                        "themes": [
+                            "bathingwater"
+                        ],
+                        "scaleRange": {
+                            "min": 5000000
+                        },
+                        "ruleSuccessProperty": "visibility"
+                    },
+                    "selectionTool_bathingwater_4_point": {
+                        "themes": [
+                            "bathingwater"
+                        ],
+                        "scaleRange": {
+                            "min": 5000000
+                        },
+                        "ruleSuccessProperty": "visibility"
+                    },
+                    "selectionTool_bathingwater_4_circle": {
+                        "themes": [
+                            "bathingwater"
+                        ],
+                        "scaleRange": {
+                            "min": 5000000
+                        },
+                        "ruleSuccessProperty": "visibility"
+                    },
+                    "selectionTool_bathingwater_4_freehand": {
+                        "themes": [
+                            "bathingwater"
+                        ],
+                        "scaleRange": {
+                            "min": 5000000
+                        },
+                        "ruleSuccessProperty": "visibility"
+                    },
+                    "selectionTool_regions_0_extent": {
+                        "themes": [
+                            "regions"
+                        ],
+                        "ruleSuccessProperty": "visibility"
+                    },
+                    "selectionTool_regions_0_point": {
+                        "themes": [
+                            "regions"
+                        ],
+                        "ruleSuccessProperty": "visibility"
+                    },
+                    "selectionTool_regions_0_circle": {
+                        "themes": [
+                            "regions"
+                        ],
+                        "ruleSuccessProperty": "visibility"
+                    },
+                    "selectionTool_regions_0_freehand": {
+                        "themes": [
+                            "regions"
+                        ],
+                        "ruleSuccessProperty": "visibility"
+                    },
+                    "selectionTool_natura2000_2_6_extent": {
+                        "themes": [
+                            "natura2000"
+                        ],
+                        "ruleSuccessProperty": "visibility"
+                    },
+                    "selectionTool_natura2000_2_6_point": {
+                        "themes": [
+                            "natura2000"
+                        ],
+                        "ruleSuccessProperty": "visibility"
+                    },
+                    "selectionTool_natura2000_2_6_circle": {
+                        "themes": [
+                            "natura2000"
+                        ],
+                        "ruleSuccessProperty": "visibility"
+                    },
+                    "selectionTool_natura2000_2_6_freehand": {
+                        "themes": [
+                            "natura2000"
+                        ],
+                        "ruleSuccessProperty": "visibility"
+                    },
+                    "reportTool": {
+                        "themes": [
+                            "bathingwater"
+                        ],
+                        "ruleSuccessProperty": "visibility"
+                    }
+                }
+            },
+            "enabled": true
+        },
+        "toolset": {
+            "ToolsetManager": {
+                "toolsets": [
+                    {
+                        "id": "dropdown1",
+                        "cssClass": "ctWDYWBtn ctPrimaryInput",
+                        "title": "${toolsets.whatdoyouwant}",
+                        "tools": [
+                            "agsprinttool",
+                            "printtool",
+                            "urlEncoder",
+                            "measurementtool",
+                            "redlining_tools",
+                            "selection_tools",
+                            "navigation_tools",
+                            "coordinateFinderTool",
+                            "appsOverviewToggleTool",
+                            "bookmarkstool"
+                        ],
+                        "container": "map",
+                        "position": {
+                            "rel_t": 72,
+                            "rel_l": 20
+                        },
+                        "windowType": "dropdown"
+                    },
+                    {
+                        "id": "redlining_tools",
+                        "title": "${toolsets.redliningTools}",
+                        "tooltip": "${toolsets.redliningToolsTooltip}",
+                        "tools": [
+                            "drawpointtool",
+                            "drawlinetool",
+                            "drawpolylinetool",
+                            "drawfreehandpolylinetool",
+                            "drawpolygontool",
+                            "drawfreehandpolygontool",
+                            "drawellipsetool",
+                            "drawarrowtool",
+                            "drawTextTool",
+                            "drawSymbolTool",
+                            "*EditTool",
+                            "redliningSymbolPropertiesTool",
+                            "undoTool",
+                            "redoTool",
+                            "drawerasealltool"
+                        ],
+                        "container": "map",
+                        "position": {
+                            "rel_t": 110,
+                            "rel_l": 20
+                        },
+                        "max_horizontal": 2,
+                        "registerTool": {
+                            "groups": [
+                                "dropdown1"
+                            ]
+                        }
+                    },
+                    {
+                        "id": "selection_tools",
+                        "title": "${toolsets.selectionTools}",
+                        "tooltip": "${toolsets.selectionToolsTooltip}",
+                        "tools": [
+                            "selectLocationInfoItems",
+                            "selectionTool*"
+                        ],
+                        "container": "map",
+                        "position": {
+                            "rel_t": 110,
+                            "rel_l": 20
+                        },
+                        "registerTool": {
+                            "groups": [
+                                "dropdown1"
+                            ]
+                        }
+                    },
+                    {
+                        "id": "navigation_tools",
+                        "title": "${toolsets.navigationTools}",
+                        "tooltip": "${toolsets.navigationToolsTooltip}",
+                        "tools": [
+                            "initialExtentTool",
+                            "zoomInTool",
+                            "zoomOutTool",
+                            "panTool",
+                            "zoomToNextExtentTool",
+                            "zoomToPrevExtentTool",
+                            "zoomToFullExtentTool"
+                        ],
+                        "container": "map",
+                        "position": {
+                            "rel_t": 110,
+                            "rel_l": 20
+                        },
+                        "registerTool": {
+                            "groups": [
+                                "dropdown1"
+                            ]
+                        }
+                    },
+                    {
+                        "id": "mapview_tools",
+                        "title": "${toolsets.mapviewTools}",
+                        "tooltip": "${toolsets.mapviewToolsTooltip}",
+                        "tools": [
+                            "zoomInClickTool",
+                            "zoomOutClickTool",
+                            "locateme",
+                            "magnifier",
+                            "overviewmap",
+                            "*CustomInfoTool"
+                        ],
+                        "container": "map",
+                        "max_horizontal": 1,
+                        "windowType": "css_positioned",
+                        "cssClass": "notitle muted mapview_tools"
+                    }
+                ]
+            },
+            "enabled": true
+        },
+        "undoredo": {
+            "enabled": true
+        },
+        "webmap": {
+            "enabled": true
+        },
+        "windowmanager": {
+            "enabled": true
+        },
+        "wizard": {
+            "enabled": true
+        }
+    }
+}
