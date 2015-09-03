@@ -1,0 +1,13 @@
+/*
+    An own application owned css file.
+    It should be used to define application own css styles, e.g. special tool icons and so on
+*/
+/* example */
+/* .app_traffic.night .basemapToggler {
+    border: 5px solid red;
+}
+*/
+.customStyle {
+    /* app.css must not empty, otherwise it will break the startup in safari!*/
+    border : 1px solid;
+}
