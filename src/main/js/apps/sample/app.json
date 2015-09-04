@@ -3,8 +3,12 @@
         "title": "${apptitle}"
     },
     "load": {
+        "bundleLocations": [
+            "bundles",
+            "localbundles"
+        ],
         "allowedBundles": [
-			"themes-plus",
+            "themes-plus",
             "console", "custominfo", "filesaver", "languagetoggler", "mobileview", "notifier", "parametermanager", "qrcode", "remotechannels", "splashscreen", "system", "templatelayout", "templates", "themes", "toolrules", "toolset",
             "basemapgallery", "basemaptoggler",
             "contentviewer", "followme", "infoviewer", "map", "mapdesk", "webmap",
@@ -676,39 +680,39 @@
                     }]
             }
         },
-      "themes": {
-         "ThemeModel": {
-            "_selectedTheme": "plus-orange",
-            "_themes": [
-               {
-                  "name": "plus-orange",
-                  "location": "themes-plus"
-               },
-               {
-                  "name": "plus-ice",
-                  "location": "themes-plus"
-               },
-               {
-                  "name": "plus-light",
-                  "location": "themes-plus"
-               },
-               {
-                  "name": "plus-lime",
-                  "location": "themes-plus"
-               },
-               {
-                  "name": "plus-purple",
-                  "location": "themes-plus"
-               },
-               {
-                  "name": "everlasting"
-               }
-            ]
-         },
-         "ThemeSelector": {
-            "componentEnabled": true
-         }
-      },
+        "themes": {
+            "ThemeModel": {
+                "_selectedTheme": "plus-orange",
+                "_themes": [
+                    {
+                        "name": "plus-orange",
+                        "location": "themes-plus"
+                    },
+                    {
+                        "name": "plus-ice",
+                        "location": "themes-plus"
+                    },
+                    {
+                        "name": "plus-light",
+                        "location": "themes-plus"
+                    },
+                    {
+                        "name": "plus-lime",
+                        "location": "themes-plus"
+                    },
+                    {
+                        "name": "plus-purple",
+                        "location": "themes-plus"
+                    },
+                    {
+                        "name": "everlasting"
+                    }
+                ]
+            },
+            "ThemeSelector": {
+                "componentEnabled": true
+            }
+        },
         "toolrules": {
             "ToolRuleManager": {
                 "_rules": {
