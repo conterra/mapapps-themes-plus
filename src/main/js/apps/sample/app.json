@@ -1,6 +1,7 @@
 {
     "properties": {
-        "title": "${apptitle}"
+        "title": "${apptitle}",
+        "amdPackages": "apprt@^3.2.1"
     },
     "load": {
         "bundleLocations": [
@@ -9,14 +10,14 @@
         ],
         "allowedBundles": [
             "themes-plus",
-            "console", "custominfo", "filesaver", "languagetoggler", "mobileview", "notifier", "parametermanager", "qrcode", "remotechannels", "splashscreen", "system", "templatelayout", "templates", "themes", "toolrules", "toolset",
-            "basemapgallery", "basemaptoggler",
-            "contentviewer", "followme", "infoviewer", "map", "mapdesk", "webmap",
-            "agsprinting", "bookmarks", "coordinatefinder", "coordinateviewer", "legend", "locateme", "magnifier", "maptip", "measurement", "navigationtoolset", "overviewmap", "redlining", "routing", "scalebar", "undoredo",
-            "reportstore", "reporttool",
-            "agssearch", "geonames", "locator", "omnisearch",
-            "featureinfo", "resultcenter", "selection",
-            "mapflow", "mobiletoc"
+            "console@^3.2.1", "custominfo@^3.2.1", "filesaver@^3.2.1", "languagetoggler@^3.2.1", "mobileview@^3.2.1", "notifier@^3.2.1", "parametermanager@^3.2.1", "qrcode@^3.2.1", "remotechannels@^3.2.1", "splashscreen@^3.2.1", "system@^3.2.1", "templatelayout@^3.2.1", "templates@^3.2.1", "themes@^3.2.1", "toolrules@^3.2.1", "toolset@^3.2.1",
+            "basemapgallery@^3.2.1", "basemaptoggler@^3.2.1",
+            "contentviewer@^3.2.1", "followme@^3.2.1", "infoviewer@^3.2.1", "map@^3.2.1", "mapdesk@^3.2.1", "webmap@^3.2.1",
+            "agsprinting@^3.2.1", "bookmarks@^3.2.1", "coordinatefinder@^3.2.1", "coordinateviewer@^3.2.1", "legend@^3.2.1", "locateme@^3.2.1", "magnifier@^3.2.1", "maptip@^3.2.1", "measurement@^3.2.1", "navigationtoolset@^3.2.1", "overviewmap@^3.2.1", "redlining@^3.2.1", "routing@^3.2.1", "scalebar@^3.2.1", "undoredo@^3.2.1",
+            "reportstore@^3.2.1", "reporttool@^3.2.1",
+            "agssearch@^3.2.1", "geonames@^3.2.1", "locator@^3.2.1", "omnisearch@^3.2.1",
+            "featureinfo@^3.2.1", "resultcenter@^3.2.1", "selection@^3.2.1",
+            "mapflow@^3.2.1", "mobiletoc@^3.2.1"
         ],
         "require": ["${app}.app"],
         "i18n": ["bundle"],
