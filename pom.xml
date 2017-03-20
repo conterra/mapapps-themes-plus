@@ -549,9 +549,9 @@
         </plugins>
     </build>
     <scm>
-        <connection>scm:git:https://github.com/conterra/mapapps-remote-project-blueprint.git</connection>
-        <developerConnection>scm:git:https://github.com/conterra/mapapps-remote-project-blueprint.git</developerConnection>
-        <url>https://github.com/conterra/mapapps-remote-project-blueprint</url>
+        <connection>scm:git:https://github.com/conterra/mapapps-themes-plus.git</connection>
+        <developerConnection>scm:git:https://github.com/conterra/mapapps-themes-plus.git</developerConnection>
+        <url>https://github.com/conterra/mapapps-themes-plus</url>
         <tag>HEAD</tag>
     </scm>
     <distributionManagement>
