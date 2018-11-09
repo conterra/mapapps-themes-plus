@@ -8,7 +8,7 @@ The themes plus bundle provides a variety of new map.apps themes.
 
 Sample App
 ------------------
-http://www.mapapps.de/mapapps/resources/apps/downloads_themes_plus/index.html
+https://demos.conterra.de/mapapps/resources/apps/downloads_themes_plus/index.html
 
 Installation Guide
 ------------------
